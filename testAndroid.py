@@ -6,8 +6,6 @@ from airtest.core.api import *
 from airtest.report.report import simple_report
 
 class FirstAndroidTest(unittest.TestCase):
-    f = open('fullReport.html', 'w').close()
-    x = {}
     
     def setUp(self):
         init_device("Android")
