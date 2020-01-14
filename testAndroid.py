@@ -13,6 +13,8 @@ class FirstAndroidTest(unittest.TestCase):
     
     def testProfile(self, x):
         auto_setup(__file__, logdir=True)
+        wait(Template(r"waitAllow.png", record_pos=(-0.008, -0.068), resolution=(2310, 1080)))
+        touch(Template(r"allow.png", record_pos=(0.094, 0.127), resolution=(2310, 1080)))
         touch(Template(r"tpl1578653206245.png", record_pos=(-0.398, -0.176), resolution=(2310, 1080)))
         wait(Template(r"tpl1578664637506.png", record_pos=(-0.054, -0.089), resolution=(2310, 1080)))
         snapshot(filename="PofileMenu.png", msg="Please fill in the test point.")        
